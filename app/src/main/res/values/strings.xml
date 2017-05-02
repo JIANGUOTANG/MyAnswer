@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">考试帮</string>
+    <string name="analyze">【分析】</string>
+    <string name="answer">答案:</string>
+    <string name="Test1">test</string>
+   <string name="noContent">还没有内容哦，快点去做题吧</string>
+    <string name="collect">收藏</string>
+    <string name="errorPractice">错题练习</string>
+    <string name="importFile">导入</string>
+    <string name="choiceFile">选择文件</string>
+    <string name="myTestLibrary">我的题库</string>
+    <string name="referFinished">查询结果</string>
+    <string name="lastQuestion">上一题</string>
+    <string name="nextQuestion">下一题</string>
+    <string name="answerSheet">答题区</string>
+        <string-array name="permissions">
+            <item>@string/permission_recode_audio_hint</item>
+            <item>@string/permission_get_accounts_hint</item>
+            <item>@string/permission_read_phone_hint</item>
+            <item>@string/permission_call_phone_hint</item>
+            <item>@string/permission_camera_hint</item>
+            <item>@string/permission_access_fine_location_hint</item>
+            <item>@string/permission_access_coarse_location_hint</item>
+            <item>@string/permission_read_external_hint</item>
+            <item>@string/permission_white_external_hint</item>
+        </string-array>
+
+
+    <string name="permission_get_accounts_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_GET_ACCOUNTS</string>
+    <string name="permission_read_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_PHONE_STATE</string>
+    <string name="permission_call_phone_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CALL_PHONE</string>
+    <string name="permission_camera_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_CAMERA</string>
+    <string name="permission_access_fine_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_FINE_LOCATION</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_ACCESS_COARSE_LOCATION</string>
+    <string name="permission_read_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_READ_EXTERNAL_STORAGE</string>
+    <string name="permission_white_external_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_recode_audio_hint">没有此权限，无法开启这个功能，请开启权限。PERMISSION_RECORD_AUDIO</string>
+</resources>

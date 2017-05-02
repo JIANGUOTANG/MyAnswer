@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="@string/importFile"
+        style="@style/toolbarStyle"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"
+        android:text="文件:"
+        android:layout_marginLeft="16dp"
+        android:textSize="@dimen/textSize_LargeTitle"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:layout_marginRight="16dp"
+        android:text="陈柏东.txt"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textSize_AppbarText"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choiceFile"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/textSize_TextOrButtonText"
+        android:textColor="@color/icons"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标签"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="@dimen/textSize_LargeTitle"
+        />
+</LinearLayout>

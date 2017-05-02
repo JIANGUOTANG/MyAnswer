@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app ="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+  <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_marginBottom="56dp"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+              android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="(单选题)"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvChoiceQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:text="在Photoshop中批处理(Batch)命令在哪个菜单中?"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <com.example.jian.myanswer.view.sparkbutton.SparkButton
+            android:id="@+id/sparkBtkCollect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:sparkbutton_activeImage="@drawable/ic_star_on"
+            app:sparkbutton_animationSpeed=".85"
+            app:sparkbutton_iconSize="30dp"
+            app:sparkbutton_inActiveImage="@drawable/ic_star_off"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvTip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/colorYellow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A"
+
+                />
+            <TextView
+                android:id="@+id/tvAnalyze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="答案解析：计算机辅助设计(CAD)，就是利用计算机的图形能力来进行设计工作；计算机辅助制造(CAM)，就是利用计算机进行生产设备的管理、控制和操作的过程。"
+                />
+            <TextView
+                android:id="@+id/tvAnswerFromNet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class=".MyQuestion">
+
+        <variable
+            name="question"
+            type="com.example.jian.myanswer.bean.Question" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginBottom="56dp"
+                android:layout_height="wrap_content"
+               >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_prepare_test_question"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:gravity="center_vertical"
+                            android:text="@{question.questionName}"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                    <com.example.jian.myanswer.view.sparkbutton.SparkButton
+                        android:id="@+id/sparkBtkCollect"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        app:sparkbutton_activeImage="@drawable/ic_star_on"
+                        app:sparkbutton_animationSpeed=".85"
+                        app:sparkbutton_iconSize="30dp"
+                        app:sparkbutton_inActiveImage="@drawable/ic_star_off"></com.example.jian.myanswer.view.sparkbutton.SparkButton>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:id="@+id/cvQuestionA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOptionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@{question.optionA}" />
+            </LinearLayout>
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:id="@+id/cvQuestionB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOptionTextB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@{question.optionB}" />
+            </LinearLayout>
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:id="@+id/cvQuestionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOptionTextC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@{question.optionC}" />
+            </LinearLayout>
+            <View style="@style/lineStyle" />
+            <LinearLayout
+                android:id="@+id/cvQuestionD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvOptionTextD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical"
+                    android:text="@{question.optionD}" />
+            </LinearLayout>
+            <View style="@style/lineStyle" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:visibility="invisible"
+                app:cardBackgroundColor="@color/colorYellow">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{question.correctAnswer}"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@{question.analysis}" />
+
+                    <Button
+                        android:id="@+id/btSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:text="互联网参考" />
+
+                    <TextView
+                        android:id="@+id/tvAnswerFromNet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.example.jian.myanswer.view.MyCheckBox
+        android:id="@+id/mCheckBox"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:text="A"
+        app:textSize="26sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        app:strokeWidth="5dp"
+        app:colorUnchecked="@color/colorPrimary"
+        app:colorChecked="@color/colorAccent"
+        />
+     <TextView
+         android:id="@+id/tvOption"
+         android:layout_marginRight="16dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:minHeight="56dp"
+         android:textSize="@dimen/textSize_TextOrButtonText"
+         android:gravity="center_vertical"
+         android:textColor="@color/primary_text"
+         android:text="一个汉字的区位码与它的国标码是相同的，且均为2字节"
+         />
+    </LinearLayout>
+    <View style="@style/lineStyle" />
+</LinearLayout>
